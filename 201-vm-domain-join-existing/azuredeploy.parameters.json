@@ -12,7 +12,12 @@
             "value": "contoso\\username"
         },
         "domainJoinUserPassword": {
-            "value": "GEN-PASSWORD"
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/XXXXXXX/resourceGroups/resourceGroupName/providers/Microsoft.KeyVault/vaults/vaultName"
+                 },
+                "secretName": "secretName"
+            }
         },
         "domainFQDN": {
             "value": "contoso.com"
